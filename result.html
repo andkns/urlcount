@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>
+{{result}}
+</h1>
+
+
+{% for url in result %}
+    <div><p>Файл - {{url}}  </p>
+    <p> {{result}} </p></div>
+{% endfor %}
+
+{% endblock %}
+

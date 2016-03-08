@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block content %}
+
+    <h2>Добавьте файл</h2>
+    <form method="post" action="{{ url_for('new_post') }}">
+        <label>
+            Заголовок поста:
+            <br>
+            <input type="text" name="title">
+        </label>
+        <br>
+        <label>
+            Краткое содержание:
+            <br>
+            <textarea name="abstract"></textarea>
+        </label>
+        <br>
+        <label>
+            Сам пост:
+            <br>
+            <textarea name="content"></textarea>
+        </label>
+        <br>
+        <input type="submit" value="Отправить">
+    </form>
+{% endblock %}
